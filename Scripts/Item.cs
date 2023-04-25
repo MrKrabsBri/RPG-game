@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+[CreateAssetMenu(fileName ="New Item", menuName = "Item/Create New Item")]
+public class Item : ScriptableObject
 {
-   
-        public string name;
+        public int id;
+        public string itemName;
         public string description;
         public Sprite icon;
         // Add any other properties you want to store for each item
